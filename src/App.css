@@ -64,7 +64,51 @@ body{
 }
 
 .infografo{
-  margin: 0 auto;
+  width: 100%;
 
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  background-color: #f1f1f1;
+  min-height: 900px;
+  margin: 0 auto;
   max-width: 80%;
+  
+}
+.infografo h1{
+  font-size: 2.4em;
+}
+.infografo div{
+  text-align: justify;
+  max-width: 30%;
+  margin: 0 8em;
+  display: flex;
+  flex-direction: column;
+
+}
+.infografo p{
+  margin-top: 1em;
+  word-spacing: 0.8em;
+}
+.infografo div button{
+  margin: 1em auto;
+  padding: 0.9em 2.5em;
+  background-color: #326da1;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+.infografo span{
+  margin: 1.5em auto 0 auto;
+}
+
+.imgInfo img{
+  width: 490px;
+  height: 900px;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  
 }
