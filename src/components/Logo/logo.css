@@ -1,0 +1,12 @@
+.logo{
+    max-width: 80vw;
+    height: 24em;
+    margin: 0 auto;
+  
+    background-color: #285474;
+    overflow: hidden;
+  }
+  .App img{
+    display: block;
+    margin: auto;
+  }

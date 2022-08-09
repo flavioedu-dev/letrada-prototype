@@ -1,4 +1,5 @@
-import linkVideo from './intro.mp4'
+import './video.css'
+import linkVideo from '../../media/intro.mp4'
 
 function Video(){
     return(

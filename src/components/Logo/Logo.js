@@ -1,4 +1,5 @@
-import logo from './logo_letrada.png'
+import './logo.css'
+import logo from '../../media/logo_letrada.png'
 
 function Logo(){
     return(

@@ -10,7 +10,8 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-.App-header{
+/* Header */
+/* .App-header{
   background-color: #D2D3D3;
 
   display: flex;
@@ -31,8 +32,10 @@ body{
 .App-header ul li{
   margin-left: 1.5em;
 }
+ */
 
-.logo{
+/* Logo */
+/* .logo{
   max-width: 80vw;
   height: 24em;
   margin: 0 auto;
@@ -61,9 +64,11 @@ body{
   border: none;
   border-radius: 3px;
   font-weight: bold;
-}
+} */
 
-.infografo{
+
+/* Infografo */
+/* .infografo{
   width: 100%;
 
   display: flex;
@@ -111,4 +116,31 @@ body{
   right: 0;
   top: 0;
   
+} */
+
+
+/* Equipe */
+/* .equipe{
+  margin-top: 6em;
+  text-align: center;
+  font-weight: bold;
 }
+.equipe h1{
+  margin-bottom: 1em;
+}
+.equipe p{
+  margin-top: 0.9em;
+}
+
+.container{
+  display: flex;
+  width: 45%;
+  margin: 1em auto;
+  justify-content: space-between;
+
+}
+
+.img{
+  max-width: 8em;
+  border-radius: 100px;
+} */

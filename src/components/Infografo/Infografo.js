@@ -1,4 +1,5 @@
-import infografoLogo from './infografo.png'
+import './infografo.css'
+import infografoLogo from '../../media/infografo.png'
 
 function infografo(){
     return(
