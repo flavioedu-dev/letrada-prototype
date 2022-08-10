@@ -6,6 +6,7 @@ import Infografo from './components/Infografo/Infografo'
 import Equipe from './components/Equipe/Equipe'
 import Mural from './components/Mural/Mural'
 import Blog from './components/Blog/Blog'
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Equipe></Equipe>
       <Mural></Mural>
       <Blog></Blog>
+      <Footer></Footer>
     </div>
   );
 }
