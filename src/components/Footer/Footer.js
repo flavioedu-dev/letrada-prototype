@@ -8,8 +8,8 @@ function Footer(){
             <h1>Fique por dentro!</h1>
 
             <div id="container-icon">
-                <img src={igIcon} alt="IG" className="icon"/>
-                <img src={ytIcon} alt="YT" className="icon"/>
+                <a href="https://www.instagram.com/le.tra.da/" target="blank"><img src={igIcon} alt="IG" className="icon"/></a>
+                <a href="https://www.youtube.com/channel/UCNtgNsnIkNHdADRHmwN1Ggg" target="blank"><img src={ytIcon} alt="YT" className="icon"/></a>
             </div>
 
             <h2>Gostariamo de saber sua opinião:</h2>

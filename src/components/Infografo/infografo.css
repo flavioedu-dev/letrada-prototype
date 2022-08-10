@@ -13,6 +13,7 @@
   }
   .infografo h1{
     font-size: 2.4em;
+    margin-top: 1em;
   }
   .infografo div{
     text-align: justify;
@@ -23,8 +24,8 @@
   
   }
   .infografo p{
-    margin-top: 1em;
-    word-spacing: 0.8em;
+    margin-top: 0.1em;
+    word-spacing: 0.5em;
   }
   .infografo div button{
     margin: 1em auto;

@@ -3,6 +3,7 @@
     text-align: center;
     background-color: #285474;
     color: #fff;
+    font-style: italic;
 }
 .footer h1{
     font-size: 3em;
@@ -15,9 +16,9 @@
 }
 #container-icon{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 10%;
-    margin: 1em auto;
+    margin: 1.5em auto;
 }
 
 .footer h2, h3, p{
