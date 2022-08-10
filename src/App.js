@@ -5,6 +5,7 @@ import Video from './components/Video/Video'
 import Infografo from './components/Infografo/Infografo'
 import Equipe from './components/Equipe/Equipe'
 import Mural from './components/Mural/Mural'
+import Blog from './components/Blog/Blog'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Infografo></Infografo>
       <Equipe></Equipe>
       <Mural></Mural>
+      <Blog></Blog>
     </div>
   );
 }
