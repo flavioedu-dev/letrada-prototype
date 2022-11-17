@@ -1,7 +1,10 @@
 :root{
     --primary-color: #285474;
-    --secondary-color: #d4cccc;
+    --secondary-color: #E1E1E1;
+    --tertiary-color: #4686B2;
+    --fourtiary-color: #C7C7C7;
     --primary-text-color: rgba(0, 0, 0, 0.795);
+    --secondary-text-color: #fff;
 }
 *{
     font-family: Lato;
@@ -11,11 +14,18 @@
     color: var(--primary-text-color);
 }
 
+.btn[type=submit]{
+    display: block;
+    border: none;
+    background-color: #4686B2;
+    padding: .7rem 2rem;
+    color: var(--secondary-text-color);
+}
+
 #head{
     height: 90vh;
     text-align: center;
-    margin-bottom: 50px;
-    
+    margin-bottom: 20vh;
 }
 
 #inner-head{
@@ -36,7 +46,6 @@
 }
 #nav a{
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
 
 }
@@ -44,4 +53,53 @@
 #logo{
     width: 100%;
     background-color: var(--primary-color);
+}
+
+#intro-container{
+    background-color: var(--fourtiary-color);
+    padding: 4rem;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+#intro-container video{
+    width: 70vw;
+    margin-bottom: 3rem;
+}
+
+#banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 85vw;
+    background-color: var(--secondary-color);
+    margin-bottom: 20vh;
+}
+#info-banner{
+    max-width: 45vw;
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+#info-banner h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#info-banner p{
+    text-indent: 2rem;
+    margin-bottom: 0.5rem;
+}
+#info-banner h4{
+    margin: 2.5rem 0;
+}
+#image-banner img{
+    max-width: 40vw;
+    margin: 0;
 }
