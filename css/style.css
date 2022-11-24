@@ -6,6 +6,7 @@
     --fourtiary-color: #C7C7C7;
     --primary-text-color: rgba(0, 0, 0, 0.795);
     --secondary-text-color: #fff;
+    --tertiary-text-color: #FFFFFF;
 }
 
 /* Geral */
@@ -14,7 +15,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--primary-text-color);
 }
 
 .mg-bt{
@@ -44,7 +44,7 @@
 }
 
 #head-title{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 #nav{
@@ -54,7 +54,8 @@
 #nav a{
     text-decoration: none;
     font-weight: bold;
-
+    color: var(--primary-text-color);
+    font-size: 1.1rem;
 }
 
 #logo{
@@ -186,11 +187,21 @@
 
 .blog-article{
     max-width: 40vw;
+    padding: 5rem;
+}
+.blog-article p{
+    font-size: 1.2rem;
+    text-align: justify;
 }
 
 .blog-article.one{
     background-color: var(--tertiary-color);
+    color: rgba(255, 255, 255, 0.973)
 }
 .blog-article.two{
     background-color: var(--fourtiary-color);
+}
+
+.article-title{
+    font-size: 2rem;
 }
