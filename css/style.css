@@ -1,3 +1,4 @@
+/* Cores */
 :root{
     --primary-color: #285474;
     --secondary-color: #E1E1E1;
@@ -6,12 +7,18 @@
     --primary-text-color: rgba(0, 0, 0, 0.795);
     --secondary-text-color: #fff;
 }
+
+/* Geral */
 *{
     font-family: Lato;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: var(--primary-text-color);
+}
+
+.mg-bt{
+    margin-bottom: 20vh;
 }
 
 .btn[type=submit]{
@@ -22,10 +29,10 @@
     color: var(--secondary-text-color);
 }
 
+/* Cabeçalho */
 #head{
     height: 90vh;
     text-align: center;
-    margin-bottom: 20vh;
 }
 
 #inner-head{
@@ -55,6 +62,7 @@
     background-color: var(--primary-color);
 }
 
+/* Introdução */
 #intro-container{
     background-color: var(--fourtiary-color);
     padding: 4rem;
@@ -63,7 +71,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20vh;
 }
 
 #intro-container video{
@@ -71,6 +78,7 @@
     margin-bottom: 3rem;
 }
 
+/* Banner */
 #banner{
     display: flex;
     justify-content: space-between;
@@ -88,13 +96,14 @@
     justify-content: center;
     text-align: justify;
 }
-#info-banner h2{
-    font-size: 2rem;
+.subtitle{
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 #info-banner p{
     text-indent: 2rem;
     margin-bottom: 0.5rem;
+    letter-spacing: 1px;
 }
 #info-banner h4{
     margin: 2.5rem 0;
@@ -102,4 +111,86 @@
 #image-banner img{
     max-width: 40vw;
     margin: 0;
+}
+
+/* Equipe */
+#team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner-team{
+    display: flex;
+    gap: 2rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+.perfil{
+    width: 8rem;
+    margin: 1rem 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.377)
+}
+
+/* Feed */
+#feed-insta{
+    background-color: var(--fourtiary-color);
+    width: 80vw;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 20vh;
+}
+
+#feed-title{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+#feed-posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 8vh;
+}
+
+.square{
+    width: 15vw;
+    height: 15vw ;
+    background-color: #285474;
+}
+
+/* Blog */
+#blog{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    justify-content: center;
+}
+
+.blog-card{
+    display: flex;
+    justify-content: center;
+}
+
+.blog-article{
+    max-width: 40vw;
+}
+
+.blog-article.one{
+    background-color: var(--tertiary-color);
+}
+.blog-article.two{
+    background-color: var(--fourtiary-color);
 }
