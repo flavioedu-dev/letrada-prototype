@@ -129,6 +129,7 @@
     flex-direction: column;
     text-align: center;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 .perfil{
     width: 8rem;
@@ -136,7 +137,7 @@
     margin-bottom: 0.5rem;
     border-radius: 50%;
     border: 5px solid #FFFFFF;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.377)
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.377);
 }
 
 /* Feed */
@@ -180,6 +181,13 @@
     justify-content: center;
 }
 
+#blog-title{
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: 4px 3px 5px rgba(83, 77, 77, 0.404);
+    margin-bottom: 1rem;
+}
+
 .blog-card{
     display: flex;
     justify-content: center;
@@ -204,4 +212,5 @@
 
 .article-title{
     font-size: 2rem;
+    margin-bottom: 3rem;
 }
