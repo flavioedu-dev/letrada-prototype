@@ -373,10 +373,6 @@
         margin: 0 auto;
     }
 
-    body{
-        overflow: hidden;
-    }
-
     /* Cabeçalho */
     #head{
         min-height: 0vh;
