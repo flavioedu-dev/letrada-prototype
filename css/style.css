@@ -21,17 +21,25 @@
     display: block;
     border: none;
     background-color: #4686B2;
-    padding: .7rem 2rem;
+    padding: .5rem 1.8rem;
     color: var(--secondary-text-color);
     cursor: pointer;
     font-size: 1rem;
+    border-radius: 4%;
+    transition: all 0.5s;
+}
+.btn[type=submit]:hover{
+    text-shadow: 0.5px 0.5px 10px black;
+}
+
+#head, #banner{
+    margin-bottom: 20vh;
 }
 
 /* Cabeçalho */
 #head{
     min-height: 90vh;
     text-align: center;
-    margin-bottom: 10vh;
 }
 
 #inner-head{
@@ -39,7 +47,7 @@
     justify-content: space-between;
     align-items: center;
     height: 20vh;
-    padding: 0 2rem;
+    padding: 0 2rem 0 3rem;
     background-color: var(--secondary-color);
 }
 
@@ -49,7 +57,7 @@
 
 .nav{
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 .nav a{
     text-decoration: none;
@@ -59,8 +67,9 @@
     letter-spacing: 2px;
 }
 .nav a:hover{
-    color: var(--tertiary-color);
-    transition: 0.5s;
+    color: #f1f1f1;
+    transition: 0.4s;
+    text-shadow: 0.5px 0.5px 10px black;
 }
 
 .mobile-nav{
@@ -82,9 +91,9 @@
 /* Introdução */
 #intro-container{
     background-color: var(--fourtiary-color);
-    padding: 4rem 4rem;
+    padding: 4rem 0 2rem 0;
     width: 90vw;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +116,7 @@
 }
 #info-banner{
     max-width: 45vw;
-    padding: 7rem;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,8 +124,8 @@
     text-align: justify;
 }
 .subtitle{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 #info-banner p{
     font-size: 1.1rem;
@@ -125,6 +134,7 @@
     letter-spacing: 1px;
 }
 #info-banner h4{
+    font-size: 1.2rem;
     margin: 2.5rem 0;
 }
 
@@ -137,11 +147,17 @@
 #team{
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 60%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 10vw;
 }
+
+.subtitle{
+    font-size: 2.3rem;
+    margin: 1rem;
+}
+
 .inner-team{
     display: flex;
     gap: 2rem;
@@ -159,7 +175,7 @@
     margin: 0 auto;
 }
 .perfil{
-    width: 8rem;
+    width: 9rem;
     margin: 1rem 0.5rem;
     margin-bottom: 0.5rem;
     border-radius: 50%;
@@ -168,52 +184,21 @@
 }
 
 #join-team{
+    max-width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-/* Feed */
-/* #feed-insta{
-    background-color: var(--fourtiary-color);
-    width: 80vw;
-    margin: 0 auto;
-    padding: 1rem;
-    text-align: center;
-    margin-bottom: 20vh;
-}
-
-#feed-title{
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: 3rem;
-    margin: 2rem 0;
-}
-
-#feed-posts{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 8vh;
-}
-
-.square{
-    width: 15vw;
-    height: 15vw ;
-    background-color: #285474;
-} */
-
 /* Blog */
 #blog{
-    margin: 0 auto;
+    margin: 0vh auto 20vh auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     max-width: 80vw;
     justify-content: center;
-    margin-bottom: 20vh;
 }
 
 #blog-title{
@@ -230,10 +215,11 @@
 
 .blog-article{
     max-width: 40vw;
-    padding: 5rem;
+    padding: 4rem;
 }
 .blog-article p{
-    font-size: 1.2rem;
+    text-indent: 1.5rem;
+    font-size: 1.1rem;
     text-align: justify;
 }
 
@@ -246,16 +232,17 @@
 }
 
 .article-title{
-    font-size: 2rem;
-    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
 }
 
 .citation{
     display: block;
     margin-bottom: 2rem;
+    font-size: 0.9rem;
 }
 .citation b{
-    margin-left: 18vw;
+    margin-left: 50%;
 }
 
 .more{
@@ -264,6 +251,7 @@
     margin-top: 2rem;
     text-overflow: auto;
     word-wrap: break-word;
+    font-size: 0.9rem;
 }
 .more-title{
     display: block;
@@ -291,7 +279,7 @@
     gap: 2rem;
 }
 #foot-icons img{
-    width: 2vw;
+    width: 2.5rem;
 }
 
 #foot-content{
@@ -355,6 +343,7 @@
 }
 #foot-form button:hover{
     color: var(--tertiary-color);
+    cursor: pointer;
 }
 
 #mark{
@@ -373,10 +362,13 @@
         margin: 0 auto;
     }
 
+    #head, #intro-container, #banner, #team, #blog{
+        margin-bottom: 10vh;
+    }
+
     /* Cabeçalho */
     #head{
         min-height: 0vh;
-        margin-bottom: 10vh;
     }
     #head-title{
         font-size: 1rem;
@@ -418,7 +410,6 @@
     /* Introdução */
     #intro-container{
         padding: 2rem 0 1rem 0;
-        margin-bottom: 10vh;
         width: 100vw;
     }
     #intro-container video{
@@ -431,7 +422,6 @@
         display: block;
         max-width: 100%;
         padding: 1rem 0 0 0;
-        margin-bottom: 10vh;
     }
     #info-banner{
         display: block;
@@ -467,7 +457,6 @@
     /* Equipe */
     #team{
         max-width: 80%;
-        margin-bottom: 10vh;
     }
     #team h2{
         font-size: 1.5rem;
@@ -486,26 +475,9 @@
         gap: 1rem;
     }
 
-    /* Feed */
-    /* #feed-insta{
-        width: 100%;
-        padding: 0.5rem 1rem;
-        margin-bottom: 10vh;
-    }
-
-    #feed-title{
-        font-size: 1.2rem;
-    }
-
-    #feed-posts{
-        gap: 1rem;
-        margin-bottom: 5vh;
-    } */
-
     /* Blog */
     #blog{
         max-width: 100%;
-        margin-bottom: 10vh;
     }
 
     #blog-title{
@@ -581,10 +553,13 @@
         margin: 0 auto;
     }
 
+    #head, #intro-container, #banner, #team, #blog{
+        margin-bottom: 20vh;
+    }
+
     /* Cabeçalho */
     #head{
         min-height: 0vh;
-        margin-bottom: 20vh;
     }
     #head-title{
         font-size: 1.5rem;
@@ -626,7 +601,6 @@
     /* Introdução */
     #intro-container{
         padding: 2rem 0 1rem 0;
-        margin-bottom: 20vh;
         width: 100vw;
     }
     #intro-container video{
@@ -639,7 +613,6 @@
         display: block;
         max-width: 100%;
         padding: 1rem 0 0 0;
-        margin-bottom: 20vh;
     }
     #info-banner{
         display: block;
@@ -675,7 +648,6 @@
     /* Equipe */
     #team{
         max-width: 80%;
-        margin-bottom: 20vh;
     }
     #team h2{
         font-size: 2rem;
@@ -697,7 +669,6 @@
     /* Blog */
     #blog{
         max-width: 100%;
-        margin-bottom: 20vh;
     }
 
     #blog-title{
@@ -774,12 +745,12 @@
         font-size: 1.1rem;
         margin: 0 auto;
     }
-    
-    /* Cabeçalho */
-    #head{
+
+    #head, #intro-container, #banner, #team, #blog{
         margin-bottom: 20vh;
     }
-
+    
+    /* Cabeçalho */
     #inner-head{
         padding: 0 1rem 0 3rem;
     }
@@ -795,7 +766,6 @@
     /* Introdução */
     #intro-container{
         padding: 3rem 0 2rem 0;
-        margin-bottom: 20vh;
         width: 100%;
     }
     #intro-container video{
@@ -808,7 +778,6 @@
         display: block;
         max-width: 80%;
         padding: 0 0 0 0rem;
-        margin-bottom: 20vh;
     }
 
     #info-banner{
@@ -819,7 +788,7 @@
     }
     #info-banner p{
         text-align: justify;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .subtitle{
@@ -840,7 +809,6 @@
     /* Equipe */
     #team{
         max-width: 90%;
-        margin-bottom: 20vh;
     }
     #team h2{
         font-size: 2.5rem;
@@ -862,7 +830,6 @@
     /* Blog */
     #blog{
         max-width: 80%;
-        margin-bottom: 20vh;
     }
 
     #blog-title{
@@ -944,55 +911,52 @@
 @media (min-width: 1025px) and (max-width: 1200px){
     /* Geral */
     .btn[type=submit]{
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin: 0 auto;
+    }
+
+    #head, #intro-container, #banner, #team, #blog{
+        margin-bottom: 20vh;
     }
     
     /* Cabeçalho */
-    #head{
-        margin-bottom: 20vh;
-    }
-
     #inner-head{
-        padding: 0 1rem 0 3rem;
+        padding: 0 2rem 0 3rem;
+    }
+    #inner-head a{
+        font-size: 1rem;
     }
 
-    .nav{
-        gap: 1rem;
-    }
-    .nav a{
-        font-size: 1rem;
-        
+    #head-title{
+        font-size: 2rem;
     }
 
     /* Introdução */
     #intro-container{
-        padding: 3rem 0 2rem 0;
-        margin-bottom: 20vh;
-        width: 100%;
+        padding: 4rem 0 2rem 0;
+        max-width: 85%;
     }
     #intro-container video{
-        width: 85vw;
+        max-width: 70vw;
         margin-bottom: 4vh;
     }
 
     /* Banner */
     #banner{
-        display: block;
-        max-width: 80%;
+        max-width: 100%;
         padding: 0 0 0 0rem;
-        margin-bottom: 20vh;
+        flex-wrap: nowrap;
     }
 
     #info-banner{
-        display: block;
-        max-width: 100%;
+        /* display: block; */
+        max-width: 50%;
         padding: 3rem;
         text-align: center;
     }
     #info-banner p{
         text-align: justify;
-        font-size: 1.3rem;
+        font-size: 1.8vw;
     }
 
     .subtitle{
@@ -1002,7 +966,8 @@
     }
 
     #info-banner h4{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        margin: 2rem 0;
     }
 
     #image-banner img{
@@ -1012,8 +977,7 @@
     
     /* Equipe */
     #team{
-        max-width: 90%;
-        margin-bottom: 20vh;
+        max-width: 80%;
     }
     #team h2{
         font-size: 2.5rem;
@@ -1025,50 +989,52 @@
     }
     
     .perfil{
-        width: 10rem;
+        width: 8rem;
     }
     
     #join-team{
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     /* Blog */
     #blog{
-        max-width: 80%;
-        margin-bottom: 20vh;
+        max-width: 100%;
+    }
+    .blog-card{
+        flex-wrap: nowrap;
     }
 
     #blog-title{
-        font-size: 3.5rem;
-        margin-bottom: 1rem;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
     }
 
     .blog-article{
-        max-width: 100%;
+        max-width: 50%;
         padding: 3rem;
     }
     .blog-article p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         text-indent: 1rem;
     }
 
     .article-title{
-        font-size: 2em;
+        font-size: 1.8rem;
         margin-bottom: 2rem;
     }
 
     .citation{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .citation b{
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-left: 50%;
     }
 
     .more{
         display: block;
         margin-top: 2rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     /* Rodapé */
@@ -1076,37 +1042,42 @@
         margin-bottom: 0;
     }
     #foot-icons img{
-        width: 5vw;
+        width: 2.5rem;
     }
 
     #foot-content{
-        display: block;
+        justify-content: center;
         text-align: center;
-        padding: 2rem;
+        padding: 0rem 0rem;
+        margin-top: 2rem;
         width: 100%;
     }
     #foot-content a{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-top: 0.3rem;
     }
 
+    #foot-contacts{
+       margin-right: 1rem;
+    }
+
     #foot-title{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #foot-content-title{
         padding: 0 0 1rem 0;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .foot-subtitle{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #foot-form{
-        margin: 3rem auto 0 auto;
+        margin: 0;
         padding: 1rem;
-        width: 80%;
+        width: 40%;
     }
 
     #mark{
