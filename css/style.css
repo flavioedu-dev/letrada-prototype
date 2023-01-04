@@ -68,8 +68,8 @@
 }
 .nav a:hover{
     color: #f1f1f1;
-    transition: 0.4s;
-    text-shadow: 0.5px 0.5px 10px black;
+    transition: 0.3s;
+    text-shadow: 0.5px 0.5px 5px black;
 }
 
 .mobile-nav{
@@ -92,7 +92,7 @@
 #intro-container{
     background-color: var(--fourtiary-color);
     padding: 4rem 0 2rem 0;
-    width: 90vw;
+    width: 85%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -295,17 +295,18 @@
 #foot-title{
     text-transform: uppercase;
     padding: 2rem 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #foot-content-title{
     text-transform: uppercase;
     padding: 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .foot-subtitle{
     letter-spacing: 2px;
+    font-size: 1.1rem;
 }
 #foot-content a{
     text-decoration: none;
@@ -313,6 +314,7 @@
     margin-bottom: 1rem;
     display: block;
     letter-spacing: 1px;
+    font-size: 1rem;
 }
 
 #foot-content form{
@@ -611,13 +613,13 @@
     /* Banner */
     #banner{
         display: block;
-        max-width: 100%;
+        max-width: 85%;
         padding: 1rem 0 0 0;
     }
     #info-banner{
         display: block;
         max-width: 100%;
-        padding: 2rem;
+        padding: 3rem;
         justify-content: center;
         text-align: justify;
     }
@@ -627,7 +629,7 @@
         margin-bottom: 1rem;
     }
     #info-banner p{
-        font-size: 0.9rem;
+        font-size: 1rem;
         text-indent: 2rem;
         margin-bottom: 0.5rem;
         letter-spacing: 1px;
@@ -647,7 +649,7 @@
 
     /* Equipe */
     #team{
-        max-width: 80%;
+        max-width: 90%;
     }
     #team h2{
         font-size: 2rem;
@@ -742,8 +744,9 @@
 @media (min-width: 769px) and (max-width: 1024px){
     /* Geral */
     .btn[type=submit]{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         margin: 0 auto;
+        padding: 0.5rem 1rem;
     }
 
     #head, #intro-container, #banner, #team, #blog{
@@ -759,7 +762,7 @@
         gap: 1rem;
     }
     .nav a{
-        font-size: 1rem;
+        font-size: 0.9rem;
         
     }
 
@@ -776,7 +779,7 @@
     /* Banner */
     #banner{
         display: block;
-        max-width: 80%;
+        max-width: 70%;
         padding: 0 0 0 0rem;
     }
 
@@ -788,17 +791,17 @@
     }
     #info-banner p{
         text-align: justify;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .subtitle{
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.6rem;
         margin-bottom: 1rem;
     }
 
     #info-banner h4{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     #image-banner img{
@@ -808,11 +811,11 @@
     
     /* Equipe */
     #team{
-        max-width: 90%;
+        max-width: 75%;
     }
     #team h2{
         font-size: 2.5rem;
-        max-width: 100%;
+        max-width: 1080%;
     }
 
     .card{
@@ -820,7 +823,7 @@
     }
     
     .perfil{
-        width: 10rem;
+        width: 8rem;
     }
     
     #join-team{
@@ -829,40 +832,43 @@
 
     /* Blog */
     #blog{
-        max-width: 80%;
+        max-width: 100%;
+    }
+
+    .blog-card{
+        flex-wrap: nowrap;
     }
 
     #blog-title{
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin-bottom: 1rem;
     }
 
     .blog-article{
-        max-width: 100%;
+        max-width: 50%;
         padding: 3rem;
     }
     .blog-article p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         text-indent: 1rem;
     }
 
     .article-title{
-        font-size: 2em;
+        font-size: 1.5em;
         margin-bottom: 2rem;
     }
 
     .citation{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     .citation b{
-        font-size: 1.1rem;
         margin-left: 50%;
     }
 
     .more{
         display: block;
         margin-top: 2rem;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     /* Rodapé */
@@ -870,37 +876,37 @@
         margin-bottom: 0;
     }
     #foot-icons img{
-        width: 5vw;
+        width: 4vw;
     }
 
     #foot-content{
-        display: block;
+        /* display: block; */
         text-align: center;
         padding: 2rem;
         width: 100%;
     }
     #foot-content a{
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: 0.3rem;
     }
 
     #foot-title{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #foot-content-title{
         padding: 0 0 1rem 0;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .foot-subtitle{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     #foot-form{
-        margin: 3rem auto 0 auto;
+        margin: 0rem auto 0 auto;
         padding: 1rem;
-        width: 80%;
+        width: 50%;
     }
 
     #mark{
@@ -911,8 +917,9 @@
 @media (min-width: 1025px) and (max-width: 1200px){
     /* Geral */
     .btn[type=submit]{
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin: 0 auto;
+        padding: 0.5rem 1rem;
     }
 
     #head, #intro-container, #banner, #team, #blog{
@@ -956,17 +963,17 @@
     }
     #info-banner p{
         text-align: justify;
-        font-size: 1.8vw;
+        font-size: 1.1rem;
     }
 
     .subtitle{
         text-align: center;
         font-size: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     #info-banner h4{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin: 2rem 0;
     }
 
@@ -977,7 +984,7 @@
     
     /* Equipe */
     #team{
-        max-width: 80%;
+        max-width: 70%;
     }
     #team h2{
         font-size: 2.5rem;
