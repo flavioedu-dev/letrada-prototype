@@ -177,7 +177,6 @@ html{
 .card{
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -396,24 +395,56 @@ html{
         display: block;
     }
 
+    #btn-icon{
+        position: fixed;
+        right: 4vw;
+        top: 4vw;
+        font-size: 2rem;
+        color: var(--secondary-color);
+        display: none;
+        z-index: 10;
+        cursor: pointer;
+    }
+
     .nav{
-        position: absolute;
-        width: 30vw;
-        height: 40vh;
-        top: 15vh;
+        z-index: 9;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
         right: 0;
+
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        background-color: var(--secondary-color);
+        gap: 0;
+
+        background-color: var(--primary-color);
         display: none;
     }
+
     .nav.active{
         display: flex;
     }
 
+    .nav-option{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
     .nav a{
-        font-size: 0.6rem;
+        font-size: 1rem;
+        color: var(--secondary-text-color);
+    }
+
+    .nav-option:hover{
+        background-color: var(--fourtiary-color);
+        text-shadow: 0.5px 0.5px 5px black;
+        transition: all 0.3s;
     }
     
     #logo img{
@@ -923,7 +954,6 @@ html{
     }
 
     #foot-content{
-        /* display: block; */
         text-align: center;
         padding: 2rem;
         width: 100%;
