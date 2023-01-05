@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
     <header id="head">
@@ -24,12 +26,14 @@
                 <div class="line3"></div>
             </div>
 
+            <i class="bi bi-x" id="btn-icon"></i>
+
             <div class="nav">
                 <!-- <a href="#head">Início</a> -->
-                <a href="#intro-container">Apresentação</a>
-                <a href="#banner">Sobre Nós</a>
-                <a href="#blog">Notícias</a>
-                <a href="#foot">Siga-nos</a>
+                <div class="nav-option"><a href="#banner">Apresentação</a></div>
+                <div class="nav-option"><a href="#team">Equipe</a></div>
+                <div class="nav-option"><a href="#blog">Notícias</a></div>
+                <div class="nav-option"><a href="#foot">Siga-nos</a></div>
             </div> 
 
         </div>
@@ -38,90 +42,94 @@
         </div>
     </header>
 
-    <div id="intro-container">
-        <video src="./media/intro.mp4" id="intro-video" controls></video>
-        <input type="submit" value="Siga-nos" class="btn">
-    </div>
+    <main>
 
-    <section id="banner">
-        <div id="info-banner">
-            <h2 class="subtitle">O que é o Letrada?</h2>
-            
-                <p>O Letrada é um projeto inspirado na tese de doutorado da professora coordenadora Tâmara Milhomem (idealizadora do projeto), é financiado pelo IFES (Instituto Federal do Espírito Santo) e realiza uma parceria entre o IFPI Campus Picos e a Secretaria Estadual de Educação do Piauí.</p> 
+        <div id="intro-container">
+            <video src="./media/intro.mp4" id="intro-video" controls></video>
+            <input type="submit" value="Siga-nos" class="btn" onclick="follow()">
+        </div>
 
-                <p>O projeto possui como objetivo mapear e desenvolver habilidades dos alunos do ensino básico para o tratamento e comunicação da informação no contexto da economia 4.0. Para atingir essa finalidade, o projeto está dividido em 5 etapas, tais quais: I - planejamento e monitoramento, II - navegação, III - julgamento da informação, IV - integração da informação e V - comunicação da informação.</p> 
-             
-                <p>O Letrada dispõe de ciclos de oficinas para atender cada etapa do letramento digital com o uso de materiais didáticos, informações relevantes, atualidades, memes, dicas para aplicação do conteúdo e muito mais. Todo esse conteúdo exclusivo juntamente com o acompanhamento durante todo o curso é 100% gratuito acrescido de um certificado de participação.</p>
+        <section id="banner">
+            <div id="info-banner">
+                <h2 class="subtitle">O que é o Letrada?</h2>
                 
-            <h4>Vem ser Letrada!</h4>
-            <input type="submit" value="Siga-nos" class="btn">
-        </div>
-        <div id="image-banner">
-            <img src="./img/banner.png" alt="banner">
-        </div>
-    </section>
+                    <p>O Letrada é um projeto inspirado na tese de doutorado da professora coordenadora Tâmara Milhomem (idealizadora do projeto), é financiado pelo IFES (Instituto Federal do Espírito Santo) e realiza uma parceria entre o IFPI Campus Picos e a Secretaria Estadual de Educação do Piauí.</p> 
 
-    <section id="team">
-        <h2 class="subtitle">Equipe</h2>
-        <span class="card prof"><img src="./img/1.png" alt="instrutor" class="perfil">Tâmara Milhomem</span>
-        <div id="join-team">
-                <span class="card"><img src="./img/2.png" alt="instrutor" class="perfil">Nyze Maia</span>
-                <span class="card"><img src="./img/3.png" alt="instrutor" class="perfil">Leonel Feitosa</span>
-                <span class="card"><img src="./img/4.png" alt="instrutor" class="perfil">Alane Costa</span>
-                <span class="card"><img src="./img/5.png" alt="instrutor" class="perfil">Gilberto Nunes</span>
-                <span class="card"><img src="./img/6.png" alt="instrutor" class="perfil">Flávio Eduardo</span>
-                <span class="card"><img src="./img/7.png" alt="instrutor" class="perfil">Deiane Sobre</span>
-                <span class="card"><img src="./img/8.png" alt="instrutor" class="perfil">Cibelle Yasmin</span>
-                <span class="card"><img src="./img/10.png" alt="instrutor" class="perfil">David Lucas</span>
-        </div>
-    </section>
-
-    <section id="blog">
-        <h1 id="blog-title">Blog 4.0</h1>
-        <div class="blog-card">
-            <article class="blog-article one">
-                <h1 class="article-title">O Metaverso de Zuckerberg</h1>
-                <span class="citation">
-                    “Acredito que faremos uma transição e as pessoas deixarão de nos ver como uma empresa principalmente de mídia social para uma empresa do metaverso”
-                    <br>
-                    <b>-Mark Zuckerberg</b>
-                </span>
-                <p>
-                    Assim afirmou Mark Zuckerberg, dono do Facebook, ao falar do futuro de sua empresa. Afirmação essa que já foi colocada em prática com a mudança de identidade do sua rede social e com um novo investimento de US$50 milhões, para tornar o metaverso realidade.                    
-                </p>
-                <p>
-                    Metaverso é o nome usado para denominar um ambiente virtual imersivo, coletivo e hiper-realista, onde as pessoas poderão conviver usando avatares customizados em 3D. Em outras palavras, ele é uma evolução da nossa internet atual.
-                </p>
-                <span class="more">
-                    <b class="more-title">Saiba mais em:</b>
-
-                    <a href="https://g1.globo.com/tecnologia/noticia/2021/10/28/o-que-e-o-metaverso-apontado-como-o-futuro-do-facebook-por-mark-zuckerberg.ghtml" target="_blank">https://g1.globo.com/tecnologia/noticia/2021/10/28/o-que-e-o-metaverso-apontado-como-o-futuro-do-facebook-por-mark-zuckerberg.ghtml</a>
+                    <p>O projeto possui como objetivo mapear e desenvolver habilidades dos alunos do ensino básico para o tratamento e comunicação da informação no contexto da economia 4.0. Para atingir essa finalidade, o projeto está dividido em 5 etapas, tais quais: I - planejamento e monitoramento, II - navegação, III - julgamento da informação, IV - integração da informação e V - comunicação da informação.</p> 
+                
+                    <p>O Letrada dispõe de ciclos de oficinas para atender cada etapa do letramento digital com o uso de materiais didáticos, informações relevantes, atualidades, memes, dicas para aplicação do conteúdo e muito mais. Todo esse conteúdo exclusivo juntamente com o acompanhamento durante todo o curso é 100% gratuito acrescido de um certificado de participação.</p>
                     
+                <h4>Vem ser Letrada!</h4>
+                <input type="submit" value="Siga-nos" class="btn" onclick="follow()">
+            </div>
+            <div id="image-banner">
+                <img src="./img/banner.png" alt="banner">
+            </div>
+        </section>
 
-                    <a href="https://blog.nubank.com.br/metaverso-o-que-e/" target="_blank">https://blog.nubank.com.br/metaverso-o-que-e/</a>
-                </span>
-            </article>
-            <article class="blog-article two">
-                <h1 class="article-title">Inclusão Digital</h1>
-                <p>
-                    A inclusão dos idosos no Letramento Digital se faz necessário no momento atual, principalmente, após a revolução da Internet 2.0 e 3.0 trazendo facilidades, economia de tempo, e aplicando no nosso cotidiano aplicativos e redes sociais como Whatsapp, Facebook e Instagram.
-                </p>
-                <p>
-                    Contudo, a sociedade idosa ainda está à margem ou em processo de transição no acesso a essas tecnologias!
-                </p>
-                <p>
-                    Na terceira idade, o acesso ao mundo virtual pode estimular as funções cognitivas do cérebro e a produtividade, sendo uma importante ferramenta para a promoção da saúde do idoso. Além de aperfeiçoar a memória, o raciocínio lógico e ocupar de forma produtiva o tempo livre. A internet pode ser uma grande aliada para promover o sentimento de pertencimento social, possibilitando que a população idosa se atualize e também seja um cidadão ativo.
-                    Ao dialogar com amigos e familiares pelas redes sociais, as chances de depressão e solidão – comuns nessa idade – são reduzidas.
-                </p>
-                <p>
-                    De acordo com uma pesquisa realizada em 2016 pelo Instituto Locomotiva, 5,2 milhões de idosos utilizam a internet regularmente no Brasil, mas o acesso ainda não é democrático.✍🏽
-                </p>
-                <span class="more">
-                    <b>Fonte:</b> Canal Futura, 2020.
-                </span>
-            </article>
-        </div>
-    </section>
+        <section id="team">
+            <h2 class="subtitle">Equipe</h2>
+            <span class="card prof"><img src="./img/1.png" alt="instrutor" class="perfil">Tâmara Milhomem</span>
+            <div id="join-team">
+                    <span class="card"><img src="./img/2.png" alt="instrutor" class="perfil">Nyze Maia</span>
+                    <span class="card"><img src="./img/3.png" alt="instrutor" class="perfil">Leonel Feitosa</span>
+                    <span class="card"><img src="./img/4.png" alt="instrutor" class="perfil">Alane Costa</span>
+                    <span class="card"><img src="./img/5.png" alt="instrutor" class="perfil">Gilberto Nunes</span>
+                    <span class="card"><img src="./img/6.png" alt="instrutor" class="perfil">Flávio Eduardo</span>
+                    <span class="card"><img src="./img/7.png" alt="instrutor" class="perfil">Deiane Sobre</span>
+                    <span class="card"><img src="./img/8.png" alt="instrutor" class="perfil">Cibelle Yasmin</span>
+                    <span class="card"><img src="./img/10.png" alt="instrutor" class="perfil">David Lucas</span>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h1 id="blog-title">Blog 4.0</h1>
+            <div class="blog-card">
+                <article class="blog-article one">
+                    <h1 class="article-title">O Metaverso de Zuckerberg</h1>
+                    <span class="citation">
+                        “Acredito que faremos uma transição e as pessoas deixarão de nos ver como uma empresa principalmente de mídia social para uma empresa do metaverso”
+                        <br>
+                        <b>-Mark Zuckerberg</b>
+                    </span>
+                    <p>
+                        Assim afirmou Mark Zuckerberg, dono do Facebook, ao falar do futuro de sua empresa. Afirmação essa que já foi colocada em prática com a mudança de identidade do sua rede social e com um novo investimento de US$50 milhões, para tornar o metaverso realidade.                    
+                    </p>
+                    <p>
+                        Metaverso é o nome usado para denominar um ambiente virtual imersivo, coletivo e hiper-realista, onde as pessoas poderão conviver usando avatares customizados em 3D. Em outras palavras, ele é uma evolução da nossa internet atual.
+                    </p>
+                    <span class="more">
+                        <b class="more-title">Saiba mais em:</b>
+
+                        <a href="https://g1.globo.com/tecnologia/noticia/2021/10/28/o-que-e-o-metaverso-apontado-como-o-futuro-do-facebook-por-mark-zuckerberg.ghtml" target="_blank">https://g1.globo.com/tecnologia/noticia/2021/10/28/o-que-e-o-metaverso-apontado-como-o-futuro-do-facebook-por-mark-zuckerberg.ghtml</a>
+                        
+
+                        <a href="https://blog.nubank.com.br/metaverso-o-que-e/" target="_blank">https://blog.nubank.com.br/metaverso-o-que-e/</a>
+                    </span>
+                </article>
+                <article class="blog-article two">
+                    <h1 class="article-title">Inclusão Digital</h1>
+                    <p>
+                        A inclusão dos idosos no Letramento Digital se faz necessário no momento atual, principalmente, após a revolução da Internet 2.0 e 3.0 trazendo facilidades, economia de tempo, e aplicando no nosso cotidiano aplicativos e redes sociais como Whatsapp, Facebook e Instagram.
+                    </p>
+                    <p>
+                        Contudo, a sociedade idosa ainda está à margem ou em processo de transição no acesso a essas tecnologias!
+                    </p>
+                    <p>
+                        Na terceira idade, o acesso ao mundo virtual pode estimular as funções cognitivas do cérebro e a produtividade, sendo uma importante ferramenta para a promoção da saúde do idoso. Além de aperfeiçoar a memória, o raciocínio lógico e ocupar de forma produtiva o tempo livre. A internet pode ser uma grande aliada para promover o sentimento de pertencimento social, possibilitando que a população idosa se atualize e também seja um cidadão ativo.
+                        Ao dialogar com amigos e familiares pelas redes sociais, as chances de depressão e solidão – comuns nessa idade – são reduzidas.
+                    </p>
+                    <p>
+                        De acordo com uma pesquisa realizada em 2016 pelo Instituto Locomotiva, 5,2 milhões de idosos utilizam a internet regularmente no Brasil, mas o acesso ainda não é democrático.✍🏽
+                    </p>
+                    <span class="more">
+                        <b>Fonte:</b> Canal Futura, 2020.
+                    </span>
+                </article>
+            </div>
+        </section>
+
+    </main>
     <footer id="foot">
         <h1 id="foot-title">Fique por dentro!</h1>
 
