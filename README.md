@@ -1,5 +1,5 @@
 # Blog Le.tra.da
-> Este é um protótipo de um blog voltado para um projeto de extensão chamado Le.tra.da.
+> Este é um protótipo do blog para o projeto de extensão chamado Le.tra.da.
 
 <br>
 
