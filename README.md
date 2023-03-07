@@ -18,4 +18,4 @@ Esse é o front-end de um blog construido com o intuito de divulgar o Le.Tra.da,
 <br>
 
 
-Created by [xflax00](https://github.com/xflax00)
+Created by [xFlax00](https://github.com/xflax00)
