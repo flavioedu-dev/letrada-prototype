@@ -1,16 +1,11 @@
-# Blog Le.tra.da
-> Este é um protótipo do blog para o projeto de extensão chamado Le.tra.da.
-
-<br>
+# Letrada blog
 
 ## Sobre o blog
-Esse é o front-end de um blog construido com o intuito de divulgar o Le.Tra.da, apresentando o que é o projeto, seu objetivo, sua equipe e trazendo notícias relacionadas ao nicho o qual ele faz parte.
+<p>This is a prototype of a blog build with the intention of promoting the Letrada project, introducing what the project is, its objective, its team and bringing news related to the niche it is part of.</p>
 
-<b>Para acessar:</b> https://xflax00.github.io/prototipo-letrada/
+<b>Access in:</b> https://xflax00.github.io/letrada-prototype/
 
-<br>
-
-### Tecnologias usadas:
+## Technologies used:
 - HTML
 - CSS
 - JavaScript
