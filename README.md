@@ -3,7 +3,7 @@
 ## Sobre o blog
 <p>This is a prototype of a blog build with the intention of promoting the Letrada project, introducing what the project is, its objective, its team and bringing news related to the niche it is part of.</p>
 
-<b>Access in:</b> https://xflax00.github.io/letrada-prototype/
+<b>Access in:</b> [LETRADA](https://flavioedu-dev.github.io/letrada-prototype/)
 
 ## Technologies used:
 - HTML
